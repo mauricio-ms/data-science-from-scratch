@@ -50,6 +50,14 @@ def scalar_multiply(c: float, v: Vector) -> Vector:
 assert scalar_multiply(2, [1, 2, 3]) == [2, 4, 6]
 
 
+def scalar_divide(c: float, v: Vector) -> Vector:
+    """Divide every element by c"""
+    return [v_i / c for v_i in v]
+
+
+assert scalar_divide(2, [10, 20, 30]) == [5, 10, 15]
+
+
 def vector_mean(vectors: List[Vector]) -> Vector:
     """Computes the element-wise average"""
     n = len(vectors)

@@ -1,5 +1,5 @@
 from collections import Counter
-from linear_algebra import scalar_divide
+from src.linear_algebra import scalar_divide
 import matplotlib.pyplot as plt
 import random
 import math
